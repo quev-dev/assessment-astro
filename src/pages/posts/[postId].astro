@@ -1,0 +1,16 @@
+---
+export function getStaticPaths() {
+  return [
+    { params: { postId: '0' } },
+    { params: { postId: '1' } },
+    { params: { postId: '2' } },
+  ];
+}
+const { postId } = Astro.params;
+
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title={`Astro Blog - Post ${postId}`}>
+  <main></main>
+</Layout>
