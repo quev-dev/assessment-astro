@@ -1,11 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 @import 'variables';
 @import 'transitions';
+@import 'animations';
 
 * {
   margin: 0;
   padding: 0;
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
 }
 
 body {
   background-color: $c-lightest;
+  font-family: 'Manrope', sans-serif;
+}
+
+button,
+a,
+input {
+  transition: $transition-default;
+}
+
+.navbar-button img {
+  padding: 0.25em;
+}
+
+button {
+  border-radius: $border-radius-default;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 4px 0px $c-dark;
+  }
+  &:active {
+    transform: translateY(0px);
+    box-shadow: 0px 0px 0px transparent;
+  }
+}
+
+#navbar-togglable-list li a {
+  width: 100%;
+  padding: 0.75em;
+
+  &:hover {
+    background-color: $c-lighter;
+  }
+  &:active {
+    background-color: $c-light;
+  }
 }

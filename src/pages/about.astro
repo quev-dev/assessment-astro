@@ -1,8 +1,57 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import iconDoor from '../content/svgs/door-fill.svg';
+import iconHeartFill from '../content/svgs/heart-fill.svg';
+import iconArrowDown from '../content/svgs/arrow-down.svg';
 ---
 
-<Layout title='Astro Blog - About'>
-  <header></header>
-  <main></main>
+<Layout title='A&B - About'>
+  <header class='flex flex-col gap-4 p-4 m-4 rounded-md bg-c-lighter'>
+    <div class='flex flex-row gap-2 items-center'>
+      <img class='w-6 h-6 p-1 rounded-sm bg-c-lightest' src={iconDoor} alt='Door' />
+      <h2>about</h2>
+    </div>
+    <h3 class='text-2xl'>What is A&B?</h3>
+    <p>
+      A&B isn't just a social network. It's <a
+        class='text-c-accent hover:underline'
+        href='#'>your</a
+      > social network. Want to talk about the latest trends in the tech field? What about
+      recent breakthroughs in science? Or the latest animal rescues?
+    </p>
+    <p>
+      With over <a class='text-c-accent hover:underline' href='/posts'
+        >100,000 blog posts</a
+      >, you'll find just about anything.
+    </p>
+    <ul class='flex flex-wrap gap-2 gap-y-0 text-c-dark'>
+      <li>#about-us</li>
+      <li>#you-can-tag-anything</li>
+      <li>#this-is-an-example-site</li>
+    </ul>
+    <aside class='flex flex-row justify-between'>
+      <div class='flex flex-row gap-1 items-center'>
+        <img class='w-6 h-6' src={iconHeartFill} alt='Heart' />
+        <p>12,392</p>
+      </div>
+      <p class='text-c-dark'>07/06/2023</p>
+    </aside>
+  </header>
+  <article class='m-12 flex flex-col gap-4 items-center justify-center'>
+    <a class='w-3/4' href='/posts'>
+      <button class='border-2 border-c-accent rounded-md text-c-accent p-2 w-full'>
+        Explore A&B Blogs
+      </button>
+    </a>
+    <!-- <button
+      class='bg-c-accent rounded-md text-c-lightest p-2 w-3/4 flex flex-row items-center justify-center gap-2'
+    >
+      <p>Learn more</p>
+      <img class='w-4 h-4' src={iconArrowDown} alt='' />
+    </button>
+  </article>
+  <main id='about-us-facts'>
+
+  </main> -->
+  </article>
 </Layout>

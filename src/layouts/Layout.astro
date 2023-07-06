@@ -21,7 +21,8 @@ import Footer from '../components/Footer.astro';
     <title>{title}</title>
   </head>
   <body>
-    <Navbar />
+    <Navbar client:load />
+    <div class='py-6'></div>
     <slot />
     <Footer />
   </body>
