@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'c-bg': '#fff',
-        'c-bg-darker': '#e7e7e7',
-        'c-bg-darkest': 'cdd0d8',
+        'c-lightest': '#ffffe8',
+        'c-lighter': '#fae2c8',
+        'c-light': '#f2c4ae',
+        'c-dark': '#3d3430',
+        'c-darker': '#22201d',
+        'c-darkest': '#0f151a',
+        'c-accent': '#3a6ddc',
       },
     },
   },

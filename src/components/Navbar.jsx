@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <nav className='p-4 md:px-8 shadow-sm'>
+    <nav className='bg-c-bg p-4 md:px-8 fixed w-full top-0 z-50'>
       <ul className='flex flex-row justify-between'>
         <li>
           <a href='/'>Home</a>
