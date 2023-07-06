@@ -3,7 +3,7 @@ export default function VideoEmbed() {
   return (
     <div>
       <iframe
-        className='rounded-sm'
+        className='rounded-md'
         width='320'
         height='180'
         src='https://www.youtube.com/embed/ywcNsJb2v2U'

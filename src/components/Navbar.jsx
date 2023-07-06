@@ -24,12 +24,12 @@ export default function Navbar() {
           </button>
         </li>
         <li>
-          <p className='text-xl italic'>A&B</p>
+          <p className='text-xl'>A&B</p>
         </li>
         <li>
-          <button className='navbar-button'>
-            <img className='w-8 h-8 relative top-1' src={iconDoor} alt='Options' />
-          </button>
+          <a href='/'>
+            <img className='w-6 h-6 relative right-1' src={iconDoor} alt='Options' />
+          </a>
         </li>
       </ul>
 
