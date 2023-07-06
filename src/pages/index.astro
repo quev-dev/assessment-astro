@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
 import GridImage from '../components/GridImage.jsx';
 import VideoEmbed from '../components/VideoEmbed.jsx';
 ---
@@ -9,7 +10,8 @@ import VideoEmbed from '../components/VideoEmbed.jsx';
     <h1 class='text-2xl'>Astro Blog</h1>
     <p>Welcome to the landing page.</p>
   </header>
-  <main class='flex flex-col items-center'>
+  <main class=''>
+    <Card header='example' text='ye' />
     <ul class='m-4 inline-grid grid-cols-2 md:grid-cols-3 gap-2'>
       <li><GridImage client:load /></li>
       <li><GridImage client:load /></li>
