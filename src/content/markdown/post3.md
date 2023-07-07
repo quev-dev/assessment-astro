@@ -1,10 +1,10 @@
 ---
 id: 98765
-title: The Future of Artificial Intelligence in Technology
+title: AI's Future
 author: Jane Smith
 description: Explore the exciting advancements and potential applications of artificial intelligence in the world of technology.
 date: November 15, 2022
-tags: [artificial intelligence, technology, machine learning]
+tags: [artificial-intelligence, technology, machine-learning]
 likes: 42
 comments:
   - author: AI Enthusiast

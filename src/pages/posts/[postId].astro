@@ -1,10 +1,12 @@
 ---
-export function getStaticPaths() {
-  return [
-    { params: { postId: '0' } },
-    { params: { postId: '1' } },
-    { params: { postId: '2' } },
-  ];
+export async function getStaticPaths() {
+  const posts = await Astro.glob('../../content/markdown/post*.md');
+  let postArray = [];
+  for (let i = 0; i < posts.length; i++) {
+    const id = posts[i].frontmatter.id.toString();
+    postArray.push({ params: { postId: id } });
+  }
+  return postArray;
 }
 const { postId } = Astro.params;
 

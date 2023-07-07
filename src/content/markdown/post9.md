@@ -4,7 +4,7 @@ title: The Fascinating World of Quantum Mechanics
 author: Dr. Synne Roldão
 description: Explore the mind-boggling concepts of quantum mechanics and its impact on modern science.
 date: March 15, 2023
-tags: [quantum physics, science, quantum mechanics]
+tags: [quantum-physics, science, quantum-mechanics]
 likes: 25
 comments:
   - author: CuriousMind

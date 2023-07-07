@@ -1,10 +1,10 @@
 ---
 id: 24503
-title: The Future of Artificial Intelligence in Technology
+title: Future Technological Advancements With AI
 author: Harvey Daley
 description: Exploring the transformative impact of AI in various industries.
 date: March 15, 2023
-tags: [artificial intelligence, technology, machine learning]
+tags: [artificial-intelligence, technology, machine-learning]
 likes: 57
 comments:
   - author: AI Enthusiast

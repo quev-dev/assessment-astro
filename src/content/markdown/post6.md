@@ -4,7 +4,7 @@ title: Exploring the Latest Advancements in Quantum Computing
 author: Arsaces Ber
 description: Discover the fascinating world of quantum computing and its recent breakthroughs.
 date: June 30, 2023
-tags: [quantum computing, technology, science]
+tags: [quantum-computing, technology, science]
 likes: 27
 comments:
   - author: QuantumGeek

@@ -4,7 +4,7 @@ title: The Future of Artificial Intelligence in Technology
 author: Samantha Wilson
 description: Exploring the impact of artificial intelligence on the tech industry and its potential for the future.
 date: June 30, 2023
-tags: [artificial intelligence, technology, future, automation]
+tags: [artificial-intelligence, technology, future, automation]
 likes: 24
 comments:
   - author: Mark Thompson

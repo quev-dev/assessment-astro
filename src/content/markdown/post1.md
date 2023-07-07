@@ -4,7 +4,7 @@ title: Exploring the Future of Artificial Intelligence
 author: Emily Thompson
 description: Discover the latest advancements and trends in the world of artificial intelligence and its potential impact on various industries.
 date: March 28, 2023
-tags: [AI, Machine Learning, Technology]
+tags: [ai, machine-learning, technology]
 likes: 56
 comments:
   - author: AIEnthusiast
@@ -13,6 +13,8 @@ comments:
     text: I'm excited to see how AI continues to shape our world. Thanks for sharing!
   - author: DataGeek
     text: The potential applications of AI are truly astounding. Keep up the great work!
+  - author: Gretchet301
+    text: AI is incredible - thank you for the blog post!
 ---
 
 Artificial Intelligence (AI) has come a long way in the past decade, revolutionizing industries and transforming the way we live and work. From virtual assistants to self-driving cars, AI is becoming increasingly integrated into our daily lives. In this post, we will explore the future of AI and discuss the emerging trends and advancements that are shaping this field.

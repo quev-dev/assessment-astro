@@ -1,10 +1,10 @@
 ---
 id: 78392
-title: The Future of Artificial Intelligence - Advancements and Challenges
+title: Artificial Intelligence - Advancements and Challenges
 author: Emberly Tatjana
 description: Exploring the latest advancements and challenges in the field of Artificial Intelligence.
 date: November 20, 2022
-tags: [AI, Machine Learning, Robotics]
+tags: [ai, machine-learning, robotics]
 likes: 56
 comments:
   - author: AIEnthusiast

@@ -1,9 +1,54 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Post from '../../components/Post.jsx';
+import iconHeartFill from '../../content/svgs/heart.svg';
+import iconChatFill from '../../content/svgs/chat-dots.svg';
+
+const posts = await Astro.glob('../../content/markdown/post*.md');
 ---
 
 <Layout title='A&B - Posts'>
-  <header></header>
-  <main></main>
+  <header>
+    <h2 class='text-2xl'>Posts</h2>
+    <ul>
+      <li>Most Recent</li>
+    </ul>
+  </header>
+  <main>
+    <ul class='flex flex-col gap-2 m-2'>
+      {
+        posts.slice(0, 3).map((post) => {
+          return (
+            <li class='flex flex-col gap-2 p-4 rounded-md bg-c-lighter'>
+              <aside>
+                <p class='text-sm text-c-dark'>{post.frontmatter.author}</p>
+                <p class='text-sm text-c-dark'>{post.frontmatter.date}</p>
+              </aside>
+              <h3 class='text-lg font-bold'>{post.frontmatter.title}</h3>
+              <p>{post.frontmatter.description}</p>
+              <a href={`/posts/${post.frontmatter.id}`} class='max-w-max'>
+                <button class='p-1 bg-c-accent text-c-lightest font-bold'>
+                  Read Post
+                </button>
+              </a>
+              <ul class='flex flex-wrap items-center gap-x-2 gap-y-0'>
+                {post.frontmatter.tags.map((tag) => (
+                  <li class='text-c-dark'>#{tag}</li>
+                ))}
+              </ul>
+              <aside class='flex flex-row gap-2 items-center'>
+                <span class='flex flex-row items-center gap-1'>
+                  <img class='w-4 h-4' src={iconHeartFill} alt='Heart' />
+                  <p>{post.frontmatter.likes}</p>
+                </span>
+                <span class='flex flex-row items-center gap-1'>
+                  <img class='w-4 h-4' src={iconChatFill} alt='Comments' />
+                  <p>{post.frontmatter.comments.length}</p>
+                </span>
+              </aside>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </main>
 </Layout>
