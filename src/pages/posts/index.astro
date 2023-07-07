@@ -7,16 +7,38 @@ const posts = await Astro.glob('../../content/markdown/post*.md');
 ---
 
 <Layout title='A&B - Posts'>
-  <header>
-    <h2 class='text-2xl'>Posts</h2>
+  <header class='m-4 flex flex-col gap-2'>
+    <span class='flex flex-row gap-2 items-end'>
+      <h2 class='text-2xl'>Posts</h2>
+      <p class='text-sm text-c-dark relative bottom-0.5'>
+        ({posts.length} posts on this page)
+      </p>
+    </span>
     <ul>
-      <li>Most Recent</li>
+      <li class='text-c-dark'>Sort by:</li>
+      <li class='flex flex-row gap-2'>
+        <p class='border-b-2 border-c-accent rounded-sm'>Featured</p>
+        <p class='border-b-2 border-c-light rounded-sm'>Trending</p>
+        <p class='border-b-2 border-c-light rounded-sm'>Recent</p>
+        <p class='border-b-2 border-c-light rounded-sm'>More</p>
+      </li>
     </ul>
+    <div class='flex flex-col gap-1'>
+      <p class='text-c-dark'>Pages</p>
+      <ul class='flex flex-row gap-1'>
+        <li class='bg-c-accent text-c-lightest w-6 h-6 text-center rounded-md'>1</li>
+        <li class='w-6 h-6 text-center rounded-md'>2</li>
+        <li class='w-6 h-6 text-center rounded-md'>3</li>
+        <li class='w-6 h-6 text-center rounded-md'>4</li>
+        <li class='w-6 h-6 text-center rounded-md'>...</li>
+      </ul>
+    </div>
   </header>
+
   <main>
     <ul class='flex flex-col gap-2 m-2'>
       {
-        posts.slice(0, 3).map((post) => {
+        posts.slice(0, 10).map((post) => {
           return (
             <li class='flex flex-col gap-2 p-4 rounded-md bg-c-lighter'>
               <aside>

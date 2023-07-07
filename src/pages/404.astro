@@ -1,9 +1,45 @@
-<main>
-  <header>
-    <h2>404</h2>
-    <p>The page you're looking for does not exist.</p>
-  </header>
-  <div>
-    <a href='/'>Return home</a>
-  </div>
-</main>
+---
+import Rerouter from '../components/Rerouter.jsx';
+import '../sass/globals.scss';
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='description' content='Astro description' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+    <title>Page Not Found</title>
+  </head>
+  <body class='bg-c-darker'>
+    <main class='h-screen flex flex-col items-center justify-center text-c-lightest'>
+      <header class='m-12 flex flex-col gap-2 bg-c-dark p-8 rounded-md'>
+        <p class='text-sm text-c-light'>Error 404: Page Not Found</p>
+        <h2 class='text-2xl font-bold'>It's empty in here.</h2>
+        <p>
+          The page you're looking for isn't at this address - well, unless you were
+          seeking out this error page.
+        </p>
+      </header>
+      <aside>
+        <a href='/'>
+          <svg
+            class='w-8 h-8'
+            xmlns='http://www.w3.org/2000/svg'
+            width='16'
+            height='16'
+            fill='#ffffe8'
+            viewBox='0 0 16 16'
+          >
+            <path
+              d='M1.5 15a.5.5 0 0 0 0 1h13a.5.5 0 0 0 0-1H13V2.5A1.5 1.5 0 0 0 11.5 1H11V.5a.5.5 0 0 0-.57-.495l-7 1A.5.5 0 0 0 3 1.5V15H1.5zM11 2h.5a.5.5 0 0 1 .5.5V15h-1V2zm-2.5 8c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1z'
+            ></path>
+          </svg>
+        </a>
+      </aside>
+      <Rerouter client:only />
+    </main>
+  </body>
+</html>
