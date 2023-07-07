@@ -1,18 +1,80 @@
 ---
+import Layout from '../../layouts/Layout.astro';
+import Post from '../../components/Post.jsx';
+import iconPen from '../../content/svgs/pen-fill.svg';
 export async function getStaticPaths() {
   const posts = await Astro.glob('../../content/markdown/post*.md');
-  let postArray = [];
-  for (let i = 0; i < posts.length; i++) {
-    const id = posts[i].frontmatter.id.toString();
-    postArray.push({ params: { postId: id } });
-  }
-  return postArray;
+  return posts.map(({ frontmatter, Content }) => {
+    return {
+      params: { postId: frontmatter.id },
+      props: {
+        postContent: Content,
+        postTitle: frontmatter.title,
+        postAuthor: frontmatter.author,
+        postDescription: frontmatter.description,
+        postDate: frontmatter.date,
+        postTags: frontmatter.tags,
+        postLikes: frontmatter.likes,
+        postComments: frontmatter.comments,
+      },
+    };
+  });
 }
-const { postId } = Astro.params;
-
-import Layout from '../../layouts/Layout.astro';
+const {
+  postContent,
+  postTitle,
+  postAuthor,
+  postDescription,
+  postDate,
+  postTags,
+  postLikes,
+  postComments,
+} = Astro.props;
 ---
 
-<Layout title={`A&B - Post ${postId}`}>
+<Layout title={`${postTitle} - ${postAuthor}`}>
+  <header class='m-8 flex flex-col gap-1'>
+    <a href='/posts' class='text-c-accent hover:underline'>&lt; Back to posts</a>
+    <h2 class='text-2xl'>{postTitle}</h2>
+    <div>
+      <p class='text-lg'>{postAuthor}</p>
+      <p>{postDate}</p>
+    </div>
+    <p>{postDescription}</p>
+    <ul class='flex flex-wrap gap-x-2 gap-y-0'>
+      {
+        postTags.map((tag) => (
+          <li class='text-c-dark'>
+            <p>#{tag}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </header>
   <main></main>
+  <aside class='m-4'>
+    <div
+      class='bg-c-dark border-l-4 border-c-darker rounded-sm my-2 pointer-events-none p-4 flex flex-row justify-between items-center'
+    >
+      <p class='text-c-lightest'>Write a reply!</p>
+      <button class='opacity-50 bg-c-accent text-c-lightest rounded-sm py-1 px-4'
+        >Reply</button
+      >
+    </div>
+    <ul class='flex flex-col gap-0.5'>
+      {
+        postComments.map((comment) => (
+          <li class='bg-c-lighter rounded-sm p-4 border-l-4 border-c-light'>
+            <span class='flex flex-row items-center gap-1'>
+              <img class='w-4 h-4 rounded-full' src={iconPen} alt='' />
+              <a href='#' class='text-c-accent pointer-events-none'>
+                {comment.author}
+              </a>
+            </span>
+            <p>{comment.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </aside>
 </Layout>
