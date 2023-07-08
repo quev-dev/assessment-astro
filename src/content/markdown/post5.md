@@ -9,10 +9,16 @@ likes: 57
 comments:
   - author: AI Enthusiast
     text: This article beautifully highlights the potential of AI!
+    likes: 13
+    date: March 16, 2023
   - author: Tech Guru
     text: I'm amazed by the advancements in AI. Can't wait to see what the future holds.
+    likes: 9
+    date: March 17, 2023
   - author: Curious Reader
     text: This post is an excellent overview of the AI landscape. Well done!
+    likes: 6
+    date: March 18, 2023
 ---
 
 Artificial Intelligence (AI) has rapidly emerged as a game-changer in the world of technology. From self-driving cars to voice assistants, AI is revolutionizing how we interact with machines. In this article, we will explore the transformative impact of AI across various industries and discuss its future prospects.

@@ -8,11 +8,17 @@ tags: [dog-care, pet-health, training, dog-behavior]
 likes: 37
 comments:
   - author: DogLover123
-    text: This guide is amazing! It has really helped me with my new puppy.
+    text: This guide is amazing! It has really helped me with my new puppy. 🐶❤️
+    likes: 12
+    date: September 16, 2022
   - author: PawsomeAdventures
-    text: Great tips! Can't wait to try them with my furry friend.
+    text: Great tips! Can't wait to try them with my furry friend. 🐾😄
+    likes: 8
+    date: September 17, 2022
   - author: CanineEnthusiast
-    text: Thank you for sharing this informative post. It's a must-read for all dog owners!
+    text: Thank you for sharing this informative post. It's a must-read for all dog owners! 🙌🐕
+    likes: 6
+    date: September 18, 2022
 ---
 
 # A Guide to Raising a Happy and Healthy Dog

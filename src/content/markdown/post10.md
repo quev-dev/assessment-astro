@@ -8,11 +8,17 @@ tags: [web-development, html, css, javascript]
 likes: 35
 comments:
   - author: WebDevEnthusiast
-    text: This is a fantastic guide for beginners! Clear and concise explanations. Thanks for sharing!
+    text: This is a fantastic guide for beginners! Clear and concise explanations. Thanks for sharing! 👏💻
+    likes: 12
+    date: July 1, 2023
   - author: CodeNewbie123
-    text: I've been wanting to learn web development, and this guide is exactly what I needed. Great job!
+    text: I've been wanting to learn web development, and this guide is exactly what I needed. Great job! 👍🌐
+    likes: 8
+    date: July 2, 2023
   - author: DesignGeek
-    text: As a designer, understanding web development is crucial. This post has been very helpful. Keep it up!
+    text: As a designer, understanding web development is crucial. This post has been very helpful. Keep it up! 🎨🖥️
+    likes: 6
+    date: July 3, 2023
 ---
 
 Are you interested in becoming a web developer? Whether you're a complete beginner or have some coding experience, this post will provide you with a comprehensive guide to kickstart your journey in web development.

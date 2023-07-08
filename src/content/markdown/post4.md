@@ -9,12 +9,20 @@ likes: 56
 comments:
   - author: AIEnthusiast
     text: This article provides a comprehensive overview of the current state of AI. Well-written and informative!
+    likes: 10
+    date: November 21, 2022
   - author: TechWizard
     text: As AI continues to evolve, it's crucial to address the ethical implications and ensure responsible development.
+    likes: 6
+    date: November 22, 2022
   - author: DataGeek
     text: I'm excited to see how AI will revolutionize industries like healthcare and finance. Great read!
+    likes: 8
+    date: November 23, 2022
   - author: FutureTech
     text: This post highlights the challenges that researchers and developers face when pushing the boundaries of AI technology. Keep up the good work!
+    likes: 4
+    date: November 24, 2022
 ---
 
 Artificial Intelligence (AI) is rapidly transforming various aspects of our lives. From voice assistants like Siri and Alexa to self-driving cars and personalized recommendations, AI has become an integral part of our everyday experiences. In this article, we will delve into the latest advancements and challenges in the field of AI.

@@ -9,10 +9,16 @@ likes: 42
 comments:
   - author: AI Enthusiast
     text: This article provides a comprehensive overview of AI's impact on various industries. Well-written and insightful!
+    likes: 15
+    date: November 17, 2022
   - author: Tech Geek
     text: As a technology enthusiast, I'm fascinated by the possibilities that AI brings to the table. Can't wait to see what the future holds!
+    likes: 10
+    date: November 18, 2022
   - author: Curious Mind
     text: The integration of AI into technology has revolutionized the way we interact with our devices. Great read!
+    likes: 7
+    date: November 19, 2022
 ---
 
 Artificial intelligence (AI) has emerged as one of the most transformative technologies of the 21st century. With its ability to mimic human intelligence and learn from vast amounts of data, AI has revolutionized various industries, including healthcare, finance, and transportation. In this article, we will explore the exciting advancements and potential applications of AI in the world of technology.

@@ -9,10 +9,16 @@ likes: 57
 comments:
   - author: AnimalLover23
     text: Wow, these animals are truly amazing! 🐾
+    likes: 15
+    date: April 16, 2023
   - author: NatureExplorer
     text: I've always been fascinated by the diversity of wildlife. Great post! 🌿
+    likes: 10
+    date: April 17, 2023
   - author: WildlifeEnthusiast
     text: This post has inspired me to learn more about the animal kingdom. Thanks! 🦁
+    likes: 8
+    date: April 18, 2023
 ---
 
 Are you ready for an adventure into the wild? In this blog post, we'll explore some of the most incredible animals that roam our planet. From the majestic lions of Africa to the colorful birds of the Amazon rainforest, nature never fails to astound us.

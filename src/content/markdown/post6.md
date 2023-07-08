@@ -9,10 +9,16 @@ likes: 27
 comments:
   - author: QuantumGeek
     text: This is a mind-blowing article! Quantum computing is revolutionizing the field.
+    likes: 9
+    date: July 1, 2023
   - author: TechEnthusiast
     text: I'm excited to see how quantum computing will shape the future of technology.
+    likes: 6
+    date: July 2, 2023
   - author: CuriousMind
     text: Can't wait to dive deeper into this topic. Great explanation!
+    likes: 4
+    date: July 3, 2023
 ---
 
 Have you ever wondered what lies beyond classical computing? In recent years, the field of quantum computing has been making remarkable strides, promising unprecedented computational power and revolutionizing the world as we know it. In this article, we will explore the latest advancements in the exciting realm of quantum computing.

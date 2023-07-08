@@ -1,9 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-// import Post from '../../components/Post.jsx';
 import iconPerson from '../../content/svgs/person-fill.svg';
-import iconHeart from '../../content/svgs/heart.svg';
 import iconComment from '../../content/svgs/chat-dots.svg';
+import iconUpload from '../../content/svgs/upload.svg';
+import iconHeart from '../../content/svgs/heart.svg';
+
 export async function getStaticPaths() {
   const posts = await Astro.glob('../../content/markdown/post*.md');
   return posts.map(({ frontmatter, Content }) => {
@@ -65,6 +66,7 @@ const {
           <img class='w-4 h-4' src={iconComment} alt='Comments:' />
           <p>{postComments.length}</p>
         </div>
+        <img class='w-4 h-4 relative top-1' src={iconUpload} alt='Share' />
       </div>
       <div>
         <p class='text-c-dark'>{postDate}</p>
@@ -76,23 +78,30 @@ const {
       class='bg-c-dark border-l-4 border-c-darker rounded-sm my-2 pointer-events-none p-4 flex flex-row justify-between items-center'
     >
       <p class='text-c-lightest'>Write a reply!</p>
-      <button class='opacity-50 bg-c-accent text-c-lightest rounded-sm py-1 px-4'
-        >Reply</button
-      >
+      <button class='opacity-50 bg-c-accent text-c-lightest rounded-sm py-1 px-4'>
+        Reply
+      </button>
     </div>
     <ul class='flex flex-col gap-0.5'>
       {
         postComments.map((comment) => (
-          <li class='bg-c-lighter rounded-sm p-4 border-l-4 border-c-light'>
+          <li class='flex flex-col gap-2 bg-c-lighter rounded-sm p-4 border-l-4 border-c-light'>
             <span class='flex flex-row items-center gap-1'>
               <div class='bg-c-lightest w-5 h-5 rounded-full flex items-center justify-center'>
                 <img class='w-4 h-4 rounded-full' src={iconPerson} alt='' />
               </div>
-              <a href='#' class='text-c-accent pointer-events-none'>
+              <a href='#' class='text-c-dark pointer-events-none'>
                 {comment.author}
               </a>
             </span>
             <p>{comment.text}</p>
+            <aside class='flex flex-row justify-between'>
+              <div class='flex flex-row items-center gap-1'>
+                <img class='w-4 h-4' src={iconHeart} alt='Likes:' />
+                <p>{comment.likes}</p>
+              </div>
+              <p class='text-c-dark'>{comment.date}</p>
+            </aside>
           </li>
         ))
       }

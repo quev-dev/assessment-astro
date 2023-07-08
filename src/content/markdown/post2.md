@@ -9,10 +9,16 @@ likes: 24
 comments:
   - author: Mark Thompson
     text: Great article! AI is definitely reshaping the tech landscape.
+    likes: 8
+    date: July 1, 2023
   - author: Sarah Adams
     text: I'm excited to see how AI will revolutionize various sectors.
+    likes: 5
+    date: July 2, 2023
   - author: James Parker
     text: This post provides valuable insights into the future of AI.
+    likes: 3
+    date: July 3, 2023
 ---
 
 Artificial intelligence (AI) has become an increasingly prominent field in technology, offering immense potential for innovation and transformation. From autonomous vehicles to virtual assistants, AI is already making a significant impact in various industries. In this post, we will delve into the future of artificial intelligence and explore its implications for the technology sector.

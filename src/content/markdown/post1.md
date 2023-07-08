@@ -8,13 +8,21 @@ tags: [ai, machine-learning, technology]
 likes: 56
 comments:
   - author: AIEnthusiast
-    text: This article provides a comprehensive overview of AI's future. Great job!
+    text: This article provides a comprehensive overview of AI's future. Great job! 👍🤖
+    likes: 12
+    date: March 29, 2023
   - author: TechGuru
-    text: I'm excited to see how AI continues to shape our world. Thanks for sharing!
+    text: I'm excited to see how AI continues to shape our world. Thanks for sharing! 😃🌍
+    likes: 8
+    date: March 30, 2023
   - author: DataGeek
-    text: The potential applications of AI are truly astounding. Keep up the great work!
+    text: The potential applications of AI are truly astounding. Keep up the great work! 👏🔥
+    likes: 10
+    date: March 31, 2023
   - author: Gretchet301
-    text: AI is incredible - thank you for the blog post!
+    text: AI is incredible - thank you for the blog post! 😊🙌
+    likes: 5
+    date: April 1, 2023
 ---
 
 # Artificial Intelligence (AI) and Its Impact on the Future

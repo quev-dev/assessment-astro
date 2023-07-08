@@ -8,11 +8,17 @@ tags: [quantum-physics, science, quantum-mechanics]
 likes: 25
 comments:
   - author: CuriousMind
-    text: This is mind-blowing! I never cease to be amazed by quantum mechanics.
+    text: This is mind-blowing! I never cease to be amazed by quantum mechanics. 🤯🔬
+    likes: 8
+    date: March 16, 2023
   - author: ScienceLover
-    text: The implications of quantum mechanics in technology are astounding. Great post!
+    text: The implications of quantum mechanics in technology are astounding. Great post! 🌟🚀
+    likes: 6
+    date: March 17, 2023
   - author: TheoreticalThinker
-    text: I love diving into the complexities of quantum mechanics. Your explanation is concise and clear.
+    text: I love diving into the complexities of quantum mechanics. Your explanation is concise and clear. 👨‍🔬📚
+    likes: 4
+    date: March 18, 2023
 ---
 
 # The Fascinating World of Quantum Mechanics
