@@ -16,6 +16,7 @@ ul {
 
 body {
   background-color: $c-lightest;
+  color: $c-darkest;
   font-family: 'Manrope', sans-serif;
 }
 
@@ -50,5 +51,53 @@ button {
   }
   &:active {
     background-color: $c-light;
+  }
+}
+
+#main-blog-post {
+  background-color: $c-lighter;
+  color: $c-darkest;
+  flex-direction: column;
+  display: flex;
+  padding: 1em;
+  gap: 1em;
+
+  h1 {
+    font-size: 1.8em;
+  }
+  h2 {
+    font-size: 1.6em;
+  }
+  h3 {
+    font-size: 1.4em;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+
+  blockquote {
+    padding: 2em;
+    font-style: italic;
+    background-color: $c-light;
+    border-radius: $border-radius-default;
+    color: $c-dark;
+    border-left: 4px solid $c-dark;
+  }
+
+  ul,
+  ol {
+    padding: 1em;
+    padding-left: 2em;
+    border-radius: $border-radius-default;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    border-left: 4px solid $c-light;
+  }
+  ul {
+    list-style: disc;
+  }
+  ol {
+    list-style: numbered;
   }
 }

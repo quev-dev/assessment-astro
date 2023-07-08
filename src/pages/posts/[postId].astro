@@ -1,14 +1,16 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Post from '../../components/Post.jsx';
-import iconPen from '../../content/svgs/pen-fill.svg';
+// import Post from '../../components/Post.jsx';
+import iconPerson from '../../content/svgs/person-fill.svg';
+import iconHeart from '../../content/svgs/heart.svg';
+import iconComment from '../../content/svgs/chat-dots.svg';
 export async function getStaticPaths() {
   const posts = await Astro.glob('../../content/markdown/post*.md');
   return posts.map(({ frontmatter, Content }) => {
     return {
       params: { postId: frontmatter.id },
       props: {
-        postContent: Content,
+        Content: Content,
         postTitle: frontmatter.title,
         postAuthor: frontmatter.author,
         postDescription: frontmatter.description,
@@ -21,7 +23,7 @@ export async function getStaticPaths() {
   });
 }
 const {
-  postContent,
+  Content,
   postTitle,
   postAuthor,
   postDescription,
@@ -51,7 +53,24 @@ const {
       }
     </ul>
   </header>
-  <main></main>
+  <main id='main-blog-post'>
+    <Content />
+    <aside class='bg-c-lighter flex flex-row justify-between items-center'>
+      <div class='flex flex-row gap-4'>
+        <div class='flex flex-row gap-1 items-center'>
+          <img class='w-4 h-4' src={iconHeart} alt='Likes:' />
+          <p>{postLikes}</p>
+        </div>
+        <div class='flex flex-row gap-1 items-center'>
+          <img class='w-4 h-4' src={iconComment} alt='Comments:' />
+          <p>{postComments.length}</p>
+        </div>
+      </div>
+      <div>
+        <p class='text-c-dark'>{postDate}</p>
+      </div>
+    </aside>
+  </main>
   <aside class='m-4'>
     <div
       class='bg-c-dark border-l-4 border-c-darker rounded-sm my-2 pointer-events-none p-4 flex flex-row justify-between items-center'
@@ -66,7 +85,9 @@ const {
         postComments.map((comment) => (
           <li class='bg-c-lighter rounded-sm p-4 border-l-4 border-c-light'>
             <span class='flex flex-row items-center gap-1'>
-              <img class='w-4 h-4 rounded-full' src={iconPen} alt='' />
+              <div class='bg-c-lightest w-5 h-5 rounded-full flex items-center justify-center'>
+                <img class='w-4 h-4 rounded-full' src={iconPerson} alt='' />
+              </div>
               <a href='#' class='text-c-accent pointer-events-none'>
                 {comment.author}
               </a>
