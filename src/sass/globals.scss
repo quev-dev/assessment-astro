@@ -131,3 +131,8 @@ button {
     list-style: numbered;
   }
 }
+
+#site-logo {
+  background-color: $c-dark;
+  border-radius: $border-radius-default;
+}

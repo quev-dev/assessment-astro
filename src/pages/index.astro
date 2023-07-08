@@ -2,18 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 import GridImage from '../components/GridImage.jsx';
 import VideoEmbed from '../components/VideoEmbed.jsx';
-import iconHeart from '../content/svgs/heart.svg';
 import iconComment from '../content/svgs/chat-dots.svg';
+import iconHeart from '../content/svgs/heart.svg';
+import iconLogo from '../content/icons/logo.webp';
 ---
 
 <Layout title='A&B - Home'>
   <header class='mt-12 mb-2 mx-auto flex flex-col gap-2 p-8 rounded-sm'>
-    <h1 class='text-5xl text-center text-c-dark mb-12'>A&B Blogs</h1>
+    <h1
+      class='text-5xl text-center text-c-dark mb-12 flex flex-row justify-center gap-2 items-center bg-c-lighter max-w-max mx-auto rounded-md'
+    >
+      <img id='site-logo' class='w-24 h-24' src={iconLogo} alt='A&B' />
+      <p class='pr-3'>Blogs</p>
+    </h1>
     <div>
       <p class='text-xl font-bold text-c-dark'>👋 Welcome!</p>
       <p>
-        A&B isn't just any social network. It's <b>your</b> social network. Your posts, your
-        topics.
+        A&B isn't just any social network. It's <b>your</b> social network. Your
+        posts, your topics.
       </p>
     </div>
     <blockquote
@@ -21,8 +27,10 @@ import iconComment from '../content/svgs/chat-dots.svg';
     >
       <p class='font-bold'>Disclaimer:</p>
       <p>
-        This website was created to mimic a blog site using Astro.js and Markdown. This
-        site is static - the posts/features listed are <b>not real</b>.
+        This website was created to mimic a blog site using Astro.js and
+        Markdown. This site is static - the posts/features listed are <b
+          >not real</b
+        >.
       </p>
       <p class='italic'>
         If you cannot click an element, its features are not implemented.
@@ -32,7 +40,9 @@ import iconComment from '../content/svgs/chat-dots.svg';
       <li>Use the links below to check out all content across A&B Blogs!</li>
       <li class='flex flex-col max-w-max'>
         <a href='/about' class='text-c-accent hover:underline'>&gt; About Us</a>
-        <a href='/posts' class='text-c-accent hover:underline'>&gt; Blog Posts</a>
+        <a href='/posts' class='text-c-accent hover:underline'
+          >&gt; Blog Posts</a
+        >
       </li>
     </ul>
   </header>
@@ -55,14 +65,17 @@ import iconComment from '../content/svgs/chat-dots.svg';
           </div>
         </aside>
         <p>Watch the video below to learn about one of our rescues!</p>
-        <aside id='embed-container' class='flex flex-col items-center justify-center'>
+        <aside
+          id='embed-container'
+          class='flex flex-col items-center justify-center'
+        >
           <VideoEmbed client:only />
         </aside>
         <h3 class='text-2xl mt-2'>🐶 Rescue Photos</h3>
         <p>
-          All of the dog photos below were taken from the <b>50+</b> rescues we've achieved
-          in the past <b>month</b>. They've made incredible transformations after the
-          second chance they've been given!
+          All of the dog photos below were taken from the <b>50+</b> rescues we've
+          achieved in the past <b>month</b>. They've made incredible
+          transformations after the second chance they've been given!
         </p>
       </div>
       <div class='flex flex-col items-center justify-center'>
@@ -83,8 +96,9 @@ import iconComment from '../content/svgs/chat-dots.svg';
       </div>
       <h3 class='text-2xl mt-2'>🙏Thank you!</h3>
       <p class='mt-2 mb-4'>
-        We appreciate you for taking a moment to learn about our rescues! If you'd like to
-        stay up to date with us, you can find more information on our <a
+        We appreciate you for taking a moment to learn about our rescues! If
+        you'd like to stay up to date with us, you can find more information on
+        our <a
           target='_blank'
           rel='noreferrer'
           href='https://www.youtube.com/@HowlOfADog'

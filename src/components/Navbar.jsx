@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import iconLogo from '../content/icons/logo.webp';
 import iconChat from '../content/svgs/chat-fill.svg';
 import iconList from '../content/svgs/list.svg';
 import iconDoor from '../content/svgs/door-fill.svg';
@@ -26,7 +27,7 @@ export default function Navbar() {
           </button>
         </li>
         <li>
-          <p className='text-xl'>A&B</p>
+          <img id='site-logo' className='w-8 h-8' src={iconLogo} alt='A&B' />
         </li>
         <li>
           <a href='/'>
