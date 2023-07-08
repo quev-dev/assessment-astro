@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <nav
       id='navbar'
-      className='bg-c-lightest p-2 md:py-4 md:px-8 fixed w-full top-0 z-30'
+      className='bg-c-lightest p-2 md:px-4 fixed w-full top-0 z-30'
     >
       <ul className='flex md:hidden flex-row justify-between items-center'>
         <li>
@@ -20,7 +20,9 @@ export default function Navbar() {
             {!showOptions && (
               <img className='w-8 h-8 relative top-1' src={iconList} alt='' />
             )}
-            {showOptions && <img className='w-8 h-8 relative top-1' src={iconX} alt='' />}
+            {showOptions && (
+              <img className='w-8 h-8 relative top-1' src={iconX} alt='' />
+            )}
           </button>
         </li>
         <li>
@@ -28,7 +30,11 @@ export default function Navbar() {
         </li>
         <li>
           <a href='/'>
-            <img className='w-6 h-6 relative right-1' src={iconDoor} alt='Options' />
+            <img
+              className='w-6 h-6 relative right-1'
+              src={iconDoor}
+              alt='Home'
+            />
           </a>
         </li>
       </ul>
@@ -55,13 +61,34 @@ export default function Navbar() {
         </ul>
       )}
 
-      <ul className='hidden md:flex flex-row justify-between'>
+      <ul
+        id='navbar-desktop'
+        className='hidden md:flex flex-row justify-between items-center'
+      >
         <li>
-          <a href='/'>Home</a>
+          <a
+            href='/'
+            className='max-w-max flex flex-row gap-1 items-center p-2 rounded-sm'
+          >
+            <img className='w-6 h-6' src={iconDoor} alt='Home' />
+            <p>A&B Blogs</p>
+          </a>
         </li>
-        <li className='flex flex-row gap-4'>
-          <a href='/about'>About</a>
-          <a href='/posts'>Posts</a>
+        <li className='flex flex-row gap-1'>
+          <a
+            href='/about'
+            className='flex flex-row gap-2 items-center p-2 rounded-sm'
+          >
+            <img className='w-4 h-4' src={iconInfo} alt='' />
+            <p>About</p>
+          </a>
+          <a
+            href='/posts'
+            className='flex flex-row gap-2 items-center p-2 rounded-sm'
+          >
+            <img className='w-4 h-4' src={iconChat} alt='' />
+            <p>Posts</p>
+          </a>
         </li>
       </ul>
     </nav>

@@ -75,6 +75,15 @@ button {
   }
 }
 
+#navbar-desktop li a {
+  &:hover {
+    background-color: $c-lighter;
+  }
+  &:active {
+    background-color: $c-light;
+  }
+}
+
 #main-blog-post {
   background-color: $c-lighter;
   color: $c-darkest;
