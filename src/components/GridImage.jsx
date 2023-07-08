@@ -29,11 +29,11 @@ export default function GridImage() {
   };
 
   return (
-    <div className=''>
+    <div className='border-4 border-c-lighter'>
       {fetchedImage && (
         <>
           <img
-            className='w-36 h-32 md:w-72 md:h-64 object-cover rounded-sm cursor-zoom-in'
+            className='w-40 h-36 md:w-72 md:h-64 object-cover rounded-sm cursor-zoom-in'
             src={fetchedImage}
             alt='Image of a dog.'
             onClick={handleClick}
@@ -53,12 +53,12 @@ export default function GridImage() {
         </>
       )}
       {!fetchedImage && !fetchFailed && (
-        <div className='w-36 h-32 md:w-72 md:h-64 flex flex-col items-center justify-center'>
+        <div className='w-40 h-36 md:w-72 md:h-64 flex flex-col items-center justify-center'>
           <p>Loading...</p>
         </div>
       )}
       {fetchFailed && (
-        <div className='w-36 h-32 md:w-72 md:h-64'>
+        <div className='w-40 h-36 md:w-72 md:h-64'>
           <p></p>
         </div>
       )}

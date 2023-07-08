@@ -2,11 +2,13 @@
 import Layout from '../layouts/Layout.astro';
 import GridImage from '../components/GridImage.jsx';
 import VideoEmbed from '../components/VideoEmbed.jsx';
+import iconHeart from '../content/svgs/heart.svg';
+import iconComment from '../content/svgs/chat-dots.svg';
 ---
 
 <Layout title='A&B - Home'>
-  <header class='my-12 mx-auto flex flex-col gap-2 p-8 rounded-sm'>
-    <h1 class='text-4xl text-center text-c-dark mb-12'>A&B Blogs</h1>
+  <header class='mt-12 mb-2 mx-auto flex flex-col gap-2 p-8 rounded-sm'>
+    <h1 class='text-5xl text-center text-c-dark mb-12'>A&B Blogs</h1>
     <div>
       <p class='text-xl font-bold text-c-dark'>👋 Welcome!</p>
       <p>
@@ -42,36 +44,66 @@ import VideoEmbed from '../components/VideoEmbed.jsx';
       <p class='rounded-sm border-b-2 border-c-light pb-1'>More</p>
     </aside>
   </div>
-  <main class='flex flex-col items-center p-4 m-4 rounded-sm bg-c-lighter'>
+  <main class='flex flex-col items-center p-4 my-2 rounded-sm bg-c-lighter'>
     <article>
-      <div class='flex flex-col gap-2'>
-        <div>
-          <p class='text-c-dark'>Howl of a Dog</p>
-          <div class='flex flex-wrap gap-2 items-end'>
-            <h4 class='text-xl'>Over 50 Dogs Rescued!</h4>
-            <p class='text-sm text-c-dark relative bottom-0.5'>07/07/2023</p>
+      <div class='flex flex-col gap-4'>
+        <aside>
+          <h4 class='text-3xl py-2'>Over 50 Dogs Rescued!</h4>
+          <div class='text-c-dark'>
+            <p>Howl of a Dog</p>
+            <p>July 8th, 2023</p>
           </div>
-        </div>
-        <VideoEmbed client:only />
-        <p class='border-l-4 p-4 rounded-sm border-c-light'>
-          You can find a selection of heartwarming dog rescue stories represented by the
-          captivating images below. Each of these images holds a significant meaning,
-          representing the incredible transformations and second changes these dogs have
-          been given.
+        </aside>
+        <p>Watch the video below to learn about one of our rescues!</p>
+        <aside id='embed-container' class='flex flex-col items-center justify-center'>
+          <VideoEmbed client:only />
+        </aside>
+        <h3 class='text-2xl mt-2'>🐶 Rescue Photos</h3>
+        <p>
+          All of the dog photos below were taken from the <b>50+</b> rescues we've achieved
+          in the past <b>month</b>. They've made incredible transformations after the
+          second chance they've been given!
         </p>
       </div>
-      <ul class='m-4 inline-grid grid-cols-2 md:grid-cols-3 gap-2'>
-        <li><GridImage client:load /></li>
-        <li><GridImage client:load /></li>
-        <li><GridImage client:load /></li>
-        <li><GridImage client:load /></li>
-        <li><GridImage client:load /></li>
-        <li><GridImage client:load /></li>
-        <li><GridImage client:load /></li>
-        <li><GridImage client:load /></li>
-        <li><GridImage client:load /></li>
-        <li><GridImage client:load /></li>
-      </ul>
+      <div class='flex flex-col items-center justify-center'>
+        <ul
+          class='m-2 p-2 inline-grid grid-cols-2 md:grid-cols-3 gap-2 bg-c-light rounded-sm'
+        >
+          <li><GridImage client:load /></li>
+          <li><GridImage client:load /></li>
+          <li><GridImage client:load /></li>
+          <li><GridImage client:load /></li>
+          <li><GridImage client:load /></li>
+          <li><GridImage client:load /></li>
+          <li><GridImage client:load /></li>
+          <li><GridImage client:load /></li>
+          <li><GridImage client:load /></li>
+          <li><GridImage client:load /></li>
+        </ul>
+      </div>
+      <h3 class='text-2xl mt-2'>🙏Thank you!</h3>
+      <p class='mt-2 mb-4'>
+        We appreciate you for taking a moment to learn about our rescues! If you'd like to
+        stay up to date with us, you can find more information on our <a
+          target='_blank'
+          rel='noreferrer'
+          href='https://www.youtube.com/@HowlOfADog'
+          class='text-c-accent hover:underline'>YouTube channel</a
+        >. We hope this post has brought you some joy today!
+      </p>
+      <aside class='flex flex-row justify-between'>
+        <div class='flex flex-row gap-4'>
+          <div class='flex flex-row gap-1 items-center'>
+            <img class='w-4 h-4' src={iconHeart} alt='Likes:' />
+            <p>84,735</p>
+          </div>
+          <div class='flex flex-row gap-1 items-center'>
+            <img class='w-4 h-4' src={iconComment} alt='Comments:' />
+            <p>371</p>
+          </div>
+        </div>
+        <p class='text-c-dark'>July 8th, 2023</p>
+      </aside>
     </article>
   </main>
 </Layout>
