@@ -5,24 +5,44 @@ import VideoEmbed from '../components/VideoEmbed.jsx';
 ---
 
 <Layout title='A&B - Home'>
-  <header class='my-12 w-3/4 mx-auto flex flex-col gap-4 bg-c-lighter p-8 rounded-md'>
-    <h1 class='text-4xl text-center'><b>A&B</b> Blogs</h1>
-    <p>
-      Welcome to A&B Blogs! You can check out a plethora of <a
-        class='text-c-accent hover:underline'
-        href='/posts'>blog posts</a
-      > from our extensive user base, and learn more <a
-        class='text-c-accent hover:underline'
-        href='/about'>about us</a
-      >.
-    </p>
+  <header class='my-12 mx-auto flex flex-col gap-2 p-8 rounded-sm'>
+    <h1 class='text-4xl text-center text-c-dark mb-12'>A&B Blogs</h1>
+    <div>
+      <p class='text-xl font-bold text-c-dark'>👋 Welcome!</p>
+      <p>
+        A&B isn't just any social network. It's <b>your</b> social network. Your posts, your
+        topics.
+      </p>
+    </div>
+    <blockquote
+      class='bg-c-light border-l-4 border-c-dark text-c-dark rounded-sm p-4 flex flex-col gap-1'
+    >
+      <p class='font-bold'>Disclaimer:</p>
+      <p>
+        This website was created to mimic a blog site using Astro.js and Markdown. This
+        site is static - the posts/features listed are <b>not real</b>.
+      </p>
+      <p class='italic'>
+        If you cannot click an element, its features are not implemented.
+      </p>
+    </blockquote>
+    <ul>
+      <li>Use the links below to check out all content across A&B Blogs!</li>
+      <li class='flex flex-col max-w-max'>
+        <a href='/about' class='text-c-accent hover:underline'>&gt; About Us</a>
+        <a href='/posts' class='text-c-accent hover:underline'>&gt; Blog Posts</a>
+      </li>
+    </ul>
   </header>
-  <aside class='text-xl font-bold flex flex-row items-center justify-center gap-1'>
-    <p class='bg-c-lighter rounded-sm border-b-2 border-c-accent px-4 py-1'>Today</p>
-    <p class='bg-c-lighter rounded-sm border-b-2 border-c-light px-4 py-1'>Trending</p>
-    <p class='bg-c-lighter rounded-sm border-b-2 border-c-light px-4 py-1'>More</p>
-  </aside>
-  <main class='flex flex-col items-center p-4 m-4 rounded-md bg-c-lighter'>
+  <div class='flex flex-col m-4'>
+    <p>Sort by:</p>
+    <aside class='text-xl flex flex-row items-center gap-2'>
+      <p class='rounded-sm border-b-2 border-c-accent pb-1'>Trending</p>
+      <p class='rounded-sm border-b-2 border-c-light pb-1'>Most Popular</p>
+      <p class='rounded-sm border-b-2 border-c-light pb-1'>More</p>
+    </aside>
+  </div>
+  <main class='flex flex-col items-center p-4 m-4 rounded-sm bg-c-lighter'>
     <article>
       <div class='flex flex-col gap-2'>
         <div>
@@ -33,7 +53,7 @@ import VideoEmbed from '../components/VideoEmbed.jsx';
           </div>
         </div>
         <VideoEmbed client:only />
-        <p class='border-l-4 p-4 rounded-md border-c-light'>
+        <p class='border-l-4 p-4 rounded-sm border-c-light'>
           You can find a selection of heartwarming dog rescue stories represented by the
           captivating images below. Each of these images holds a significant meaning,
           representing the incredible transformations and second changes these dogs have

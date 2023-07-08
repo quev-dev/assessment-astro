@@ -25,7 +25,7 @@ export default function GridImage() {
   }, []);
 
   const handleClick = () => {
-    setShowFullImage(!showFullImage);
+    if (fetchedImage && !fetchFailed) setShowFullImage(!showFullImage);
   };
 
   return (

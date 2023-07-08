@@ -10,6 +10,27 @@
   outline: none;
 }
 
+html {
+  scrollbar-width: thin;
+  scrollbar-color: $c-accent $c-lightest;
+}
+::-webkit-scrollbar {
+  background-color: $c-lightest;
+  width: 12px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $c-accent;
+  border-radius: 100vw;
+  border: solid 2px $c-lightest;
+}
+::webkit-scrollbar-track {
+  background-color: $c-accent;
+  margin-block: 0.5em;
+}
+::-webkit-scrollbar-corner {
+  background-color: $c-accent;
+}
+
 ul {
   list-style: none;
 }
