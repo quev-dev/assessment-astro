@@ -33,9 +33,9 @@ export default function GridImage() {
       {fetchedImage && (
         <>
           <img
-            className='w-40 h-36 md:w-72 md:h-64 object-cover rounded-sm cursor-zoom-in'
+            className='bg-c-lighter w-40 h-36 md:w-72 md:h-64 object-cover rounded-sm cursor-zoom-in'
             src={fetchedImage}
-            alt='Image of a dog.'
+            alt=''
             onClick={handleClick}
           />
           {showFullImage && (
@@ -53,13 +53,20 @@ export default function GridImage() {
         </>
       )}
       {!fetchedImage && !fetchFailed && (
-        <div className='w-40 h-36 md:w-72 md:h-64 flex flex-col items-center justify-center'>
-          <p>Loading...</p>
+        <div className='bg-c-lighter rounded-sm flex flex-col items-center justify-center'>
+          <p className='p-4'>🌐 | Loading...</p>
         </div>
       )}
       {fetchFailed && (
-        <div className='w-40 h-36 md:w-72 md:h-64'>
-          <p></p>
+        <div className='bg-c-lighter rounded-sm p-2 flex flex-col items-center justify-center text-sm'>
+          <p className='italic text-c-dark'>The image failed to load.</p>
+          <p className='pointer-events-none'>
+            If the issue persists, you may{' '}
+            <a className='text-c-accent' href='#'>
+              contact
+            </a>{' '}
+            us.
+          </p>
         </div>
       )}
     </div>
