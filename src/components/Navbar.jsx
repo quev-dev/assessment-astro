@@ -13,7 +13,7 @@ export default function Navbar() {
   return (
     <nav
       id='navbar'
-      className='bg-c-lightest p-2 md:px-4 fixed w-full top-0 z-30'
+      className='bg-c-lightest text-c-dark p-2 md:px-4 fixed w-full top-0 z-30'
     >
       <ul className='flex md:hidden flex-row justify-between items-center'>
         <li>
@@ -21,9 +21,7 @@ export default function Navbar() {
             {!showOptions && (
               <img className='w-8 h-8 relative top-1' src={iconList} alt='' />
             )}
-            {showOptions && (
-              <img className='w-8 h-8 relative top-1' src={iconX} alt='' />
-            )}
+            {showOptions && <img className='w-8 h-8 relative top-1' src={iconX} alt='' />}
           </button>
         </li>
         <li>
@@ -31,11 +29,7 @@ export default function Navbar() {
         </li>
         <li>
           <a href='/'>
-            <img
-              className='w-6 h-6 relative right-1'
-              src={iconDoor}
-              alt='Home'
-            />
+            <img className='w-6 h-6 relative right-1' src={iconDoor} alt='Home' />
           </a>
         </li>
       </ul>
@@ -43,21 +37,61 @@ export default function Navbar() {
       {showOptions && (
         <ul
           id='navbar-togglable-list'
-          className='bg-c-lightest gap-4 top-11 left-0 absolute w-11/12 h-screen flex md:hidden flex-col'
+          className='bg-c-lightest gap-4 top-11 left-0 absolute w-11/12 h-screen flex md:hidden flex-col justify-between'
         >
-          <li className='flex flex-col'>
-            <a href='/' className='flex flex-row gap-2 items-center'>
+          <li className='flex flex-col relative top-2'>
+            <a
+              href='/'
+              className='navbar-togglable-list-link flex flex-row gap-2 items-center'
+            >
               <img className='w-4 h-4' src={iconDoor} alt='' />
               <p>Home</p>
             </a>
-            <a href='/about' className='flex flex-row gap-2 items-center'>
+            <a
+              href='/about'
+              className='navbar-togglable-list-link flex flex-row gap-2 items-center'
+            >
               <img className='w-4 h-4' src={iconInfo} alt='' />
               <p>About</p>
             </a>
-            <a href='/posts' className='flex flex-row gap-2 items-center'>
+            <a
+              href='/posts'
+              className='navbar-togglable-list-link flex flex-row gap-2 items-center'
+            >
               <img className='w-4 h-4' src={iconChat} alt='' />
               <p>Posts</p>
             </a>
+          </li>
+          <li className='p-4 relative bottom-11 text-sm flex flex-col gap-4'>
+            <div class='text-sm'>
+              <p>&copy; 2023 A&B</p>
+              <p>All Rights Reserved.</p>
+            </div>
+            <ul className='flex flex-wrap gap-4 gap-y-0 pointer-events-none'>
+              <li>Accessibility</li>
+              <li>Media</li>
+              <li>Copyright</li>
+              <li>Privacy</li>
+            </ul>
+            <blockquote className='p-4 rounded-sm italic bg-c-lighter border-l-4 border-c-light'>
+              <p className='opacity-90'>
+                This is not a real site. This is a static site, developed to mimic a blog
+                platform and practice design concepts with Astro.js and Markdown.
+              </p>
+            </blockquote>
+            <aside>
+              <p>
+                GitHub repository:{' '}
+                <a
+                  className='text-c-accent hover:underline'
+                  target='_blank'
+                  rel='noreferrer'
+                  href='https://github.com/quev-dev/bfe-assessment-astro'
+                >
+                  bfe-assessment-astro
+                </a>
+              </p>
+            </aside>
           </li>
         </ul>
       )}
@@ -76,17 +110,11 @@ export default function Navbar() {
           </a>
         </li>
         <li className='flex flex-row gap-1'>
-          <a
-            href='/about'
-            className='flex flex-row gap-2 items-center p-2 rounded-sm'
-          >
+          <a href='/about' className='flex flex-row gap-2 items-center p-2 rounded-sm'>
             <img className='w-4 h-4' src={iconInfo} alt='' />
             <p>About</p>
           </a>
-          <a
-            href='/posts'
-            className='flex flex-row gap-2 items-center p-2 rounded-sm'
-          >
+          <a href='/posts' className='flex flex-row gap-2 items-center p-2 rounded-sm'>
             <img className='w-4 h-4' src={iconChat} alt='' />
             <p>Posts</p>
           </a>
