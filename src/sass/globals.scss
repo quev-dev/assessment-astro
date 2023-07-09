@@ -51,6 +51,26 @@ input {
   padding: 0.25em;
 }
 
+.social-link-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1em;
+  a {
+    border-radius: $border-radius-default;
+    background-color: $c-accent;
+    padding: 0.25em;
+    &:active {
+      opacity: 0.5;
+    }
+  }
+  img {
+    width: 1.5em;
+    height: 1.5em;
+    filter: invert(100%);
+  }
+}
+
 button {
   border-radius: $border-radius-default;
   &:hover {
@@ -135,4 +155,20 @@ button {
 #site-logo {
   background-color: $c-dark;
   border-radius: $border-radius-default;
+}
+
+#link-tiktok:hover {
+  background-color: #ff004f;
+}
+#link-youtube:hover {
+  background-color: #bb0000;
+}
+#link-instagram:hover {
+  background-color: #517fa4;
+}
+#link-twitter:hover {
+  background-color: #5daade;
+}
+#link-facebook:hover {
+  background-color: #3b5999;
 }

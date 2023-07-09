@@ -1,25 +1,89 @@
+---
+import iconInstagram from '../content/svgs/instagram.svg';
+import iconFacebook from '../content/svgs/facebook.svg';
+import iconTwitter from '../content/svgs/twitter.svg';
+import iconYoutube from '../content/svgs/youtube.svg';
+import iconTiktok from '../content/svgs/tiktok.svg';
+---
+
 <footer class='p-8 flex flex-col gap-4 bg-c-darkest text-c-lightest'>
-  <div>
-    <p>&copy; A&B | 2023</p>
-    <p>
-      A very <b>real</b> company with a very <b>real</b> blog site.
-    </p>
+  <ul>
+    <li class='flex flex-col max-w-max'>
+      <a class='text-c-accent hover:underline' href='/'>Home &gt;</a>
+      <a class='text-c-accent hover:underline' href='/about'>About Us &gt;</a>
+      <a class='text-c-accent hover:underline' href='/posts'>Posts &gt;</a>
+    </li>
+  </ul>
+  <ul class='flex flex-col gap-2'>
+    <li class='text-sm'>
+      <p>
+        We're active on other social networks, too! You can learn more through the links
+        below.
+      </p>
+    </li>
+    <li class='social-link-container'>
+      <a
+        id='link-facebook'
+        target='_blank'
+        rel='noreferrer'
+        href='https://www.facebook.com/'
+      >
+        <img src={iconFacebook} alt='Facebook' />
+      </a>
+      <a id='link-twitter' target='_blank' rel='noreferrer' href='https://twitter.com/'>
+        <img src={iconTwitter} alt='Twitter' />
+      </a>
+      <a
+        id='link-instagram'
+        target='_blank'
+        rel='noreferrer'
+        href='https://www.instagram.com/'
+      >
+        <img src={iconInstagram} alt='Instagram' />
+      </a>
+      <a
+        id='link-youtube'
+        target='_blank'
+        rel='noreferrer'
+        href='https://www.youtube.com/'
+      >
+        <img src={iconYoutube} alt='Youtube' />
+      </a>
+      <a id='link-tiktok' target='_blank' rel='noreferrer' href='https://www.tiktok.com/'>
+        <img src={iconTiktok} alt='Tiktok' />
+      </a>
+    </li>
+  </ul>
+  <div class='text-sm'>
+    <p>&copy; 2023 A&B</p>
+    <p>All Rights Reserved.</p>
   </div>
-  <aside
-    class='italic bg-c-darker p-4 rounded-md border-l-4 border-l-c-dark flex flex-col gap-4'
+  <ul>
+    <li class='pointer-events-none text-sm flex flex-wrap gap-x-1 gap-y-0'>
+      <a class='text-c-accent underline' href='#'>Site Map</a>
+      <p>|</p>
+      <a class='text-c-accent underline' href='#'>Privacy and Terms of Use</a>
+      <p>|</p>
+      <a class='text-c-accent underline' href='#'>Accessibility</a>
+      <p>|</p>
+      <a class='text-c-accent underline' href='#'>Media</a>
+    </li>
+  </ul>
+  <blockquote
+    class='italic bg-c-darker p-4 rounded-sm border-l-4 border-l-c-dark flex flex-col gap-4'
   >
     <p class='opacity-90'>
       This is not a real site. This is a static site, developed to mimic a blog platform
       and practice design concepts with Astro.js and Markdown.
     </p>
-    <div>
-      <p>You can view the GitHub repository with the link below.</p>
-      <a
-        class='text-c-accent hover:underline'
-        target='_blank'
-        rel='noreferrer'
-        href='https://github.com/quev-dev/bfe-assessment-astro'>bfe-assessment-astro</a
-      >
-    </div>
-  </aside>
+  </blockquote>
+  <div class='rounded-sm flex flex-col'>
+    <p>You can view the GitHub repository with the link below.</p>
+    <a
+      class='text-c-accent hover:underline'
+      target='_blank'
+      rel='noreferrer'
+      href='https://github.com/quev-dev/bfe-assessment-astro'>bfe-assessment-astro</a
+    >
+  </div>
 </footer>
