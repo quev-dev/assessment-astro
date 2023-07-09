@@ -44,7 +44,7 @@ const posts = await Astro.glob('../../content/markdown/post*.md');
         {
           posts.slice(0, 10).map((post) => {
             return (
-              <li class='flex flex-col gap-2 p-4 rounded-md bg-c-lighter border-c-light border-l-4'>
+              <li class='flex flex-col gap-2 p-4 rounded-sm bg-c-lighter border-c-light border-l-4'>
                 <aside>
                   <p class='text-sm text-c-dark'>{post.frontmatter.author}</p>
                   <p class='text-sm text-c-dark'>{post.frontmatter.date}</p>

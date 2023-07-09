@@ -29,7 +29,7 @@ export default function GridImage() {
   };
 
   return (
-    <div className='border-4 border-c-lighter'>
+    <div>
       {fetchedImage && (
         <>
           <img

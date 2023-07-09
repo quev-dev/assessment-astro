@@ -8,7 +8,9 @@ import iconLogo from '../content/icons/logo.webp';
 ---
 
 <Layout title='A&B - Home'>
-  <header class='mt-12 mb-2 mx-auto flex flex-col gap-2 p-8 rounded-sm'>
+  <header
+    class='mt-12 mb-2 mx-auto flex flex-col gap-2 p-8 rounded-sm md:w-1/2 md:mx-auto'
+  >
     <h1
       class='text-5xl text-center text-c-dark mb-12 flex flex-row justify-center gap-2 items-center bg-c-lighter max-w-max mx-auto rounded-md'
     >
@@ -42,7 +44,7 @@ import iconLogo from '../content/icons/logo.webp';
       </li>
     </ul>
   </header>
-  <div class='flex flex-col m-4'>
+  <div class='flex flex-col m-4 md:w-1/2 md:mx-auto'>
     <p>Sort by:</p>
     <aside class='text-xl flex flex-row items-center gap-2'>
       <p class='rounded-sm border-b-2 border-c-accent pb-1'>Trending</p>
@@ -50,8 +52,10 @@ import iconLogo from '../content/icons/logo.webp';
       <p class='rounded-sm border-b-2 border-c-light pb-1'>More</p>
     </aside>
   </div>
-  <main class='flex flex-col items-center p-4 my-2 rounded-sm bg-c-lighter'>
-    <article>
+  <main
+    class='flex flex-col items-center p-4 md:mb-12 my-2 rounded-sm bg-c-lighter md:border-c-light md:border-l-4 md:p-8 md:w-3/4 md:mx-auto xl:w-1/2'
+  >
+    <article class=''>
       <div class='flex flex-col gap-4'>
         <aside>
           <h4 class='text-3xl py-2'>Over 50 Dogs Rescued!</h4>

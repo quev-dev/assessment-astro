@@ -59,7 +59,7 @@ export default function Navbar() {
               className='navbar-togglable-list-link flex flex-row gap-2 items-center'
             >
               <img className='w-4 h-4' src={iconChat} alt='' />
-              <p>Posts</p>
+              <p>Blog Posts</p>
             </a>
           </li>
           <li className='p-4 relative bottom-11 text-sm flex flex-col gap-4'>
@@ -116,7 +116,7 @@ export default function Navbar() {
           </a>
           <a href='/posts' className='flex flex-row gap-2 items-center p-2 rounded-sm'>
             <img className='w-4 h-4' src={iconChat} alt='' />
-            <p>Posts</p>
+            <p>Blog Posts</p>
           </a>
         </li>
       </ul>

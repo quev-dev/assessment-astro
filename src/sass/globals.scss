@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
 @import 'variables';
-@import 'transitions';
 @import 'animations';
 
 * {
@@ -171,4 +170,18 @@ button {
 }
 #link-facebook:hover {
   background-color: #3b5999;
+}
+
+@media screen and (min-width: 768px) {
+  #embed-container iframe {
+    width: 560px;
+    height: 315px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #embed-container iframe {
+    width: 600px;
+    height: 338px;
+  }
 }
