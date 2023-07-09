@@ -6,71 +6,76 @@ const posts = await Astro.glob('../../content/markdown/post*.md');
 ---
 
 <Layout title='A&B - Posts'>
-  <header class='m-4 flex flex-col gap-2'>
-    <a href='/' class='text-c-accent hover:underline max-w-max'>&lt; Back to home page</a>
-    <span class='flex flex-row gap-2 items-end'>
-      <h2 class='text-2xl'>Posts</h2>
-      <p class='text-sm text-c-dark relative bottom-0.5'>
-        ({posts.length} posts on this page)
-      </p>
-    </span>
-    <ul>
-      <li class='text-c-dark'>Sort by:</li>
-      <li class='flex flex-row gap-2'>
-        <p class='border-b-2 border-c-accent rounded-sm'>Featured</p>
-        <p class='border-b-2 border-c-light rounded-sm'>Trending</p>
-        <p class='border-b-2 border-c-light rounded-sm'>Recent</p>
-        <p class='border-b-2 border-c-light rounded-sm'>More</p>
-      </li>
-    </ul>
-    <div class='flex flex-col gap-1'>
-      <p class='text-c-dark'>Pages</p>
-      <ul class='flex flex-row gap-1'>
-        <li class='bg-c-accent text-c-lightest w-6 h-6 text-center rounded-md'>1</li>
-        <li class='w-6 h-6 text-center rounded-md'>2</li>
-        <li class='w-6 h-6 text-center rounded-md'>3</li>
-        <li class='w-6 h-6 text-center rounded-md'>4</li>
-        <li class='w-6 h-6 text-center rounded-md'>...</li>
+  <div
+    class='flex flex-col md:flex-row md:justify-center md:w-5/6 md:mx-auto lg:w-1/2 md:items-start md:py-6'
+  >
+    <header class='m-4 flex flex-col gap-2 md:sticky md:top-16'>
+      <a href='/' class='text-c-accent hover:underline max-w-max'
+        >&lt; Back to home page</a
+      >
+      <span class='flex flex-row gap-2 items-end'>
+        <h2 class='text-2xl'>Posts</h2>
+        <p class='text-sm text-c-dark relative bottom-0.5'>
+          ({posts.length} posts on this page)
+        </p>
+      </span>
+      <ul>
+        <li class='text-c-dark'>Sort by:</li>
+        <li class='flex flex-row gap-2'>
+          <p class='border-b-2 border-c-accent rounded-sm'>Featured</p>
+          <p class='border-b-2 border-c-light rounded-sm'>Trending</p>
+          <p class='border-b-2 border-c-light rounded-sm'>Recent</p>
+          <p class='border-b-2 border-c-light rounded-sm'>More</p>
+        </li>
       </ul>
-    </div>
-  </header>
-
-  <main>
-    <ul class='flex flex-col gap-2 m-2'>
-      {
-        posts.slice(0, 10).map((post) => {
-          return (
-            <li class='flex flex-col gap-2 p-4 rounded-md bg-c-lighter'>
-              <aside>
-                <p class='text-sm text-c-dark'>{post.frontmatter.author}</p>
-                <p class='text-sm text-c-dark'>{post.frontmatter.date}</p>
-              </aside>
-              <h3 class='text-lg font-bold'>{post.frontmatter.title}</h3>
-              <p>{post.frontmatter.description}</p>
-              <a href={`/posts/${post.frontmatter.id}`} class='max-w-max'>
-                <button class='p-1 bg-c-accent text-c-lightest font-bold'>
-                  Read Post
-                </button>
-              </a>
-              <ul class='flex flex-wrap items-center gap-x-2 gap-y-0'>
-                {post.frontmatter.tags.map((tag) => (
-                  <li class='text-c-dark'>#{tag}</li>
-                ))}
-              </ul>
-              <aside class='flex flex-row gap-2 items-center'>
-                <span class='flex flex-row items-center gap-1'>
-                  <img class='w-4 h-4' src={iconHeartFill} alt='Heart' />
-                  <p>{post.frontmatter.likes}</p>
-                </span>
-                <span class='flex flex-row items-center gap-1'>
-                  <img class='w-4 h-4' src={iconChatFill} alt='Comments' />
-                  <p>{post.frontmatter.comments.length}</p>
-                </span>
-              </aside>
-            </li>
-          );
-        })
-      }
-    </ul>
-  </main>
+      <div class='flex flex-col gap-1'>
+        <p class='text-c-dark'>Pages</p>
+        <ul class='flex flex-row gap-1'>
+          <li class='bg-c-accent text-c-lightest w-6 h-6 text-center rounded-md'>1</li>
+          <li class='w-6 h-6 text-center rounded-md'>2</li>
+          <li class='w-6 h-6 text-center rounded-md'>3</li>
+          <li class='w-6 h-6 text-center rounded-md'>4</li>
+          <li class='w-6 h-6 text-center rounded-md'>...</li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <ul class='flex flex-col gap-2 m-2'>
+        {
+          posts.slice(0, 10).map((post) => {
+            return (
+              <li class='flex flex-col gap-2 p-4 rounded-md bg-c-lighter border-c-light border-l-4'>
+                <aside>
+                  <p class='text-sm text-c-dark'>{post.frontmatter.author}</p>
+                  <p class='text-sm text-c-dark'>{post.frontmatter.date}</p>
+                </aside>
+                <h3 class='text-lg font-bold'>{post.frontmatter.title}</h3>
+                <p>{post.frontmatter.description}</p>
+                <a href={`/posts/${post.frontmatter.id}`} class='max-w-max'>
+                  <button class='p-1 bg-c-accent text-c-lightest font-bold'>
+                    Read Post
+                  </button>
+                </a>
+                <ul class='flex flex-wrap items-center gap-x-2 gap-y-0'>
+                  {post.frontmatter.tags.map((tag) => (
+                    <li class='text-c-dark'>#{tag}</li>
+                  ))}
+                </ul>
+                <aside class='flex flex-row gap-2 items-center'>
+                  <span class='flex flex-row items-center gap-1'>
+                    <img class='w-4 h-4' src={iconHeartFill} alt='Heart' />
+                    <p>{post.frontmatter.likes}</p>
+                  </span>
+                  <span class='flex flex-row items-center gap-1'>
+                    <img class='w-4 h-4' src={iconChatFill} alt='Comments' />
+                    <p>{post.frontmatter.comments.length}</p>
+                  </span>
+                </aside>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </main>
+  </div>
 </Layout>

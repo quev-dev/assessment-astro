@@ -6,57 +6,59 @@ import iconArrowDown from '../content/svgs/arrow-down.svg';
 ---
 
 <Layout title='A&B - About'>
-  <aside class='mx-8 pt-2'>
-    <a href='/' class='text-c-accent hover:underline'>&lt; Return home</a>
-  </aside>
-  <header class='flex flex-col gap-4 p-4 m-4 rounded-md bg-c-lighter'>
-    <div class='flex flex-row gap-2 items-center'>
-      <img class='w-6 h-6 p-1 rounded-sm bg-c-lightest' src={iconDoor} alt='Door' />
-      <h2>about</h2>
-    </div>
-    <h3 class='text-2xl'>What is A&B?</h3>
-    <p>
-      A&B isn't just a social network. It's <a
-        class='text-c-accent hover:underline'
-        href='#'>your</a
-      > social network. Want to talk about the latest trends in the tech field? What about
-      recent breakthroughs in science? Or the latest animal rescues?
-    </p>
-    <p>
-      With over <a class='text-c-accent hover:underline' href='/posts'
-        >100,000 blog posts</a
-      >, you'll find just about anything.
-    </p>
-    <ul class='flex flex-wrap gap-2 gap-y-0 text-c-dark'>
-      <li>#about-us</li>
-      <li>#you-can-tag-anything</li>
-      <li>#this-is-an-example-site</li>
-    </ul>
-    <aside class='flex flex-row justify-between'>
-      <div class='flex flex-row gap-1 items-center'>
-        <img class='w-4 h-4' src={iconHeartFill} alt='Heart' />
-        <p>12,392</p>
+  <header class='md:w-1/2 md:mx-auto lg:w-1/3'>
+    <aside class='mx-8 pt-2'>
+      <a href='/' class='text-c-accent hover:underline'>&lt; Return home</a>
+    </aside>
+    <div class='flex flex-col gap-4 p-4 m-4 rounded-md bg-c-lighter'>
+      <div class='flex flex-row gap-2 items-center'>
+        <img class='w-6 h-6 p-1 rounded-sm bg-c-lightest' src={iconDoor} alt='Door' />
+        <h2>about</h2>
       </div>
-      <p class='text-c-dark'>07/06/2023</p>
+      <h3 class='text-2xl'>What is A&B?</h3>
+      <p>
+        A&B isn't just a social network. It's <a
+          class='text-c-accent hover:underline'
+          href='#'>your</a
+        > social network. Want to talk about the latest trends in the tech field? What about
+        recent breakthroughs in science? Or the latest animal rescues?
+      </p>
+      <p>
+        With over <a class='text-c-accent hover:underline' href='/posts'
+          >100,000 blog posts</a
+        >, you'll find just about anything.
+      </p>
+      <ul class='flex flex-wrap gap-2 gap-y-0 text-c-dark'>
+        <li>#about-us</li>
+        <li>#you-can-tag-anything</li>
+        <li>#this-is-an-example-site</li>
+      </ul>
+      <aside class='flex flex-row justify-between'>
+        <div class='flex flex-row gap-1 items-center'>
+          <img class='w-4 h-4' src={iconHeartFill} alt='Heart' />
+          <p>12,392</p>
+        </div>
+        <p class='text-c-dark'>07/06/2023</p>
+      </aside>
+    </div>
+    <aside class='m-12 flex flex-col gap-4 items-center justify-center'>
+      <a class='w-3/4' href='/posts'>
+        <button class='border-2 border-c-accent rounded-md text-c-accent p-2 w-full'>
+          Explore A&B Blogs
+        </button>
+      </a>
+      <a class='w-3/4' href='#about-us-facts'>
+        <button
+          class='bg-c-accent rounded-md text-c-lightest p-2 w-full flex flex-row items-center justify-center gap-2'
+        >
+          <p>Learn more</p>
+          <img class='w-4 h-4' src={iconArrowDown} alt='' />
+        </button>
+      </a>
     </aside>
   </header>
-  <aside class='m-12 flex flex-col gap-4 items-center justify-center'>
-    <a class='w-3/4' href='/posts'>
-      <button class='border-2 border-c-accent rounded-md text-c-accent p-2 w-full'>
-        Explore A&B Blogs
-      </button>
-    </a>
-    <a class='w-3/4' href='#about-us-facts'>
-      <button
-        class='bg-c-accent rounded-md text-c-lightest p-2 w-full flex flex-row items-center justify-center gap-2'
-      >
-        <p>Learn more</p>
-        <img class='w-4 h-4' src={iconArrowDown} alt='' />
-      </button>
-    </a>
-  </aside>
-  <main id='about-us-facts'>
-    <article class='bg-c-light py-4'>
+  <main id='about-us-facts' class='bg-c-light'>
+    <article class='py-4 md:w-1/2 md:mx-auto lg:w-1/3'>
       <div class='flex flex-col gap-4 p-4 m-4 rounded-md bg-c-lighter'>
         <div class='flex flex-row gap-2 items-center'>
           <img class='w-6 h-6 p-1 rounded-sm bg-c-lightest' src={iconDoor} alt='Door' />
@@ -112,24 +114,26 @@ import iconArrowDown from '../content/svgs/arrow-down.svg';
       </div>
     </article>
     <article class='bg-c-lightest py-4'>
-      <aside class='m-12 flex flex-col gap-4 items-center justify-center'>
-        <div class='w-3/4 mx-auto'>
-          <h3 class='text-xl'>Ready to Explore A&B?</h3>
-          <p>All of the world's blogs, right at your fingertips.</p>
-        </div>
-        <a class='w-3/4' href='/posts'>
-          <button class='border-2 border-c-accent rounded-md text-c-accent p-2 w-full'>
-            Explore A&B Blogs
-          </button>
-        </a>
-        <a class='w-3/4 pointer-events-none' href='#'>
-          <button
-            class='bg-c-accent rounded-md text-c-lightest p-2 w-full flex flex-row items-center justify-center gap-2'
-          >
-            Sign up (it's free!)
-          </button>
-        </a>
-      </aside>
+      <div class='md:w-1/2 md:mx-auto lg:w-1/3'>
+        <aside class='m-12 flex flex-col gap-4 items-center justify-center'>
+          <div class='w-3/4 mx-auto'>
+            <h3 class='text-xl'>Ready to Explore A&B?</h3>
+            <p>All of the world's blogs, right at your fingertips.</p>
+          </div>
+          <a class='w-3/4' href='/posts'>
+            <button class='border-2 border-c-accent rounded-md text-c-accent p-2 w-full'>
+              Explore A&B Blogs
+            </button>
+          </a>
+          <a class='w-3/4 pointer-events-none' href='#'>
+            <button
+              class='bg-c-accent rounded-md text-c-lightest p-2 w-full flex flex-row items-center justify-center gap-2'
+            >
+              Sign up (it's free!)
+            </button>
+          </a>
+        </aside>
+      </div>
     </article>
   </main>
 </Layout>
