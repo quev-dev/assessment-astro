@@ -1,22 +1,22 @@
 ---
 id: 98765
-title: AI's Future
+title: AI's Future 🤖🚀
 author: Jane Smith
-description: Explore the exciting advancements and potential applications of artificial intelligence in the world of technology.
+description: Explore the exciting advancements and potential applications of artificial intelligence in the world of technology. 🌐💡
 date: November 15, 2022
 tags: [artificial-intelligence, technology, machine-learning]
 likes: 42
 comments:
   - author: AI Enthusiast
-    text: This article provides a comprehensive overview of AI's impact on various industries. Well-written and insightful!
+    text: This article provides a comprehensive overview of AI's impact on various industries. Well-written and insightful! 👍📚
     likes: 15
     date: November 17, 2022
   - author: Tech Geek
-    text: As a technology enthusiast, I'm fascinated by the possibilities that AI brings to the table. Can't wait to see what the future holds!
+    text: As a technology enthusiast, I'm fascinated by the possibilities that AI brings to the table. Can't wait to see what the future holds! 😃🔬
     likes: 10
     date: November 18, 2022
   - author: Curious Mind
-    text: The integration of AI into technology has revolutionized the way we interact with our devices. Great read!
+    text: The integration of AI into technology has revolutionized the way we interact with our devices. Great read! 👏📱
     likes: 7
     date: November 19, 2022
 ---

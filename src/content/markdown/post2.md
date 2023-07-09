@@ -1,22 +1,22 @@
 ---
 id: 19283
-title: The Future of Artificial Intelligence in Technology
+title: The Future of Artificial Intelligence in Technology 👨‍💻🌐
 author: Samantha Wilson
-description: Exploring the impact of artificial intelligence on the tech industry and its potential for the future.
+description: Exploring the impact of artificial intelligence on the tech industry and its potential for the future. 🚀
 date: June 30, 2023
 tags: [artificial-intelligence, technology, future, automation]
 likes: 24
 comments:
   - author: Mark Thompson
-    text: Great article! AI is definitely reshaping the tech landscape.
+    text: Great article! AI is definitely reshaping the tech landscape. 👍
     likes: 8
     date: July 1, 2023
   - author: Sarah Adams
-    text: I'm excited to see how AI will revolutionize various sectors.
+    text: I'm excited to see how AI will revolutionize various sectors. 😃
     likes: 5
     date: July 2, 2023
   - author: James Parker
-    text: This post provides valuable insights into the future of AI.
+    text: This post provides valuable insights into the future of AI. 🤔
     likes: 3
     date: July 3, 2023
 ---

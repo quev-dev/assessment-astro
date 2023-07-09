@@ -1,8 +1,8 @@
 ---
 id: 040352
-title: A Beginner's Guide to Web Development
+title: A Beginner's Guide to Web Development 💻📚
 author: Taiwo Lykos
-description: Learn the basics of web development and get started on your coding journey.
+description: Learn the basics of web development and get started on your coding journey. 🌐🚀
 date: June 30, 2023
 tags: [web-development, html, css, javascript]
 likes: 35

@@ -1,8 +1,8 @@
 ---
 id: 15201
-title: Amazing Animals in the Wild!
+title: Amazing Animals in the Wild! 🐾🌿
 author: Camilla Kirabo
-description: 'Discover the fascinating world of wildlife and their incredible behaviors.'
+description: Discover the fascinating world of wildlife and their incredible behaviors. 🦁🌍
 date: April 15, 2023
 tags: [wildlife, nature, animals, biodiversity]
 likes: 57

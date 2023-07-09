@@ -1,8 +1,8 @@
 ---
 id: 23581
-title: A Guide to Raising a Happy and Healthy Dog
+title: A Guide to Raising a Happy and Healthy Dog 🐶🌟
 author: Sigourney Hamisi
-description: Learn valuable tips and tricks for raising a happy and healthy dog. From nutrition to exercise, this post covers everything you need to know.
+description: Learn valuable tips and tricks for raising a happy and healthy dog. From nutrition to exercise, this post covers everything you need to know. 🍖🏋️‍♂️
 date: September 15, 2022
 tags: [dog-care, pet-health, training, dog-behavior]
 likes: 37

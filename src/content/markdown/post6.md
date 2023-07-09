@@ -1,22 +1,22 @@
 ---
 id: 16812
-title: Exploring the Latest Advancements in Quantum Computing
+title: Exploring the Latest Advancements in Quantum Computing 🌌💻
 author: Arsaces Ber
-description: Discover the fascinating world of quantum computing and its recent breakthroughs.
+description: Discover the fascinating world of quantum computing and its recent breakthroughs. 🧠🔬
 date: June 30, 2023
 tags: [quantum-computing, technology, science]
 likes: 27
 comments:
   - author: QuantumGeek
-    text: This is a mind-blowing article! Quantum computing is revolutionizing the field.
+    text: This is a mind-blowing article! Quantum computing is revolutionizing the field. 🤯💡
     likes: 9
     date: July 1, 2023
   - author: TechEnthusiast
-    text: I'm excited to see how quantum computing will shape the future of technology.
+    text: I'm excited to see how quantum computing will shape the future of technology. 😃🚀
     likes: 6
     date: July 2, 2023
   - author: CuriousMind
-    text: Can't wait to dive deeper into this topic. Great explanation!
+    text: Can't wait to dive deeper into this topic. Great explanation! 👏🔍
     likes: 4
     date: July 3, 2023
 ---
