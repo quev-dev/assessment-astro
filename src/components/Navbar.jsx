@@ -86,9 +86,9 @@ export default function Navbar() {
                   className='text-c-accent hover:underline'
                   target='_blank'
                   rel='noreferrer'
-                  href='https://github.com/quev-dev/bfe-assessment-astro'
+                  href='https://github.com/quev-dev/assessment-astro'
                 >
-                  bfe-assessment-astro
+                  assessment-astro
                 </a>
               </p>
             </aside>

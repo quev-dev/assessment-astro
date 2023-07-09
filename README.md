@@ -1,10 +1,10 @@
-# BfE Assessment: Astro
+# Astro Assessment
 
 ## Introduction
 
 This static web app built with Astro.js mimics the common features of a blog. It was developed & deployed within 10 days as an assessment.
 
-> The live version of the site can be found [here](#).
+> The live version of the site can be found [here](https://quevdev-astro-assessment.netlify.app).
 
 You can learn more about this short project's features below.
 
