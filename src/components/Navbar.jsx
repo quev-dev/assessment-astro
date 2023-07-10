@@ -73,7 +73,7 @@ export default function Navbar() {
               <li>Copyright</li>
               <li>Privacy</li>
             </ul>
-            <blockquote className='p-4 rounded-sm italic bg-c-lighter border-l-4 border-c-light'>
+            <blockquote className='bq-light bg-c-lighter p-4 rounded-sm italic'>
               <p className='opacity-90'>
                 This is not a real site. This is a static site, developed to mimic a blog
                 platform and practice design concepts with Astro.js and Markdown.

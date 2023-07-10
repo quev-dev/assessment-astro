@@ -22,10 +22,10 @@ const posts = await Astro.glob('../../content/markdown/post*.md');
       <ul>
         <li class='text-c-dark'>Sort by:</li>
         <li class='flex flex-row gap-2'>
-          <p class='border-b-2 border-c-accent rounded-sm'>Featured</p>
-          <p class='border-b-2 border-c-light rounded-sm'>Trending</p>
-          <p class='border-b-2 border-c-light rounded-sm'>Recent</p>
-          <p class='border-b-2 border-c-light rounded-sm'>More</p>
+          <p class='sort-option-selected rounded-sm'>Featured</p>
+          <p class='sort-option rounded-sm'>Trending</p>
+          <p class='sort-option rounded-sm'>Recent</p>
+          <p class='sort-option rounded-sm'>More</p>
         </li>
       </ul>
       <div class='flex flex-col gap-1'>
@@ -44,7 +44,7 @@ const posts = await Astro.glob('../../content/markdown/post*.md');
         {
           posts.slice(0, 10).map((post) => {
             return (
-              <li class='flex flex-col gap-2 p-4 rounded-sm bg-c-lighter border-c-light border-l-4'>
+              <li class='bq-light flex flex-col gap-2 p-4 rounded-sm bg-c-lighter'>
                 <aside>
                   <p class='text-sm text-c-dark'>{post.frontmatter.author}</p>
                   <p class='text-sm text-c-dark'>{post.frontmatter.date}</p>

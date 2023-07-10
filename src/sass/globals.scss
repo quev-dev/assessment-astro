@@ -189,6 +189,13 @@ button {
     width: 560px;
     height: 315px;
   }
+  #homepage-article,
+  #main-blog-post {
+    border-left: solid 4px $c-light;
+  }
+  #footer-container {
+    border-left: solid 4px $c-dark;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -196,4 +203,22 @@ button {
     width: 600px;
     height: 338px;
   }
+}
+
+.button-outline {
+  border: solid 2px $c-accent;
+}
+
+.bq-light {
+  border-left: solid 4px $c-light;
+}
+.bq-dark {
+  border-left: solid 4px $c-dark;
+}
+
+.sort-option-selected {
+  border-bottom: solid 2px $c-accent;
+}
+.sort-option {
+  border-bottom: solid 2px $c-light;
 }
