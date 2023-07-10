@@ -18,7 +18,7 @@ import iconLogo from '../content/icons/logo.webp';
       <p class='pr-3'>Blogs</p>
     </h1>
     <div>
-      <p class='text-xl font-bold text-c-dark'>👋 Welcome!</p>
+      <h2 class='text-3xl text-c-dark'>Welcome!👋</h2>
       <p>
         A&B isn't just any social network. It's <b>your</b> social network. Your posts, your
         topics.
@@ -27,7 +27,7 @@ import iconLogo from '../content/icons/logo.webp';
     <blockquote
       class='bg-c-lighter border-l-4 border-c-light text-c-dark rounded-sm p-4 flex flex-col gap-1'
     >
-      <p class='font-bold'>⚠️ Disclaimer:</p>
+      <p>⚠️ Disclaimer:</p>
       <p>
         This website was created to mimic a blog site using Astro.js and Markdown. This
         site is static - the posts/features listed are <b>not real</b>.
@@ -56,20 +56,23 @@ import iconLogo from '../content/icons/logo.webp';
     class='flex flex-col items-center p-4 md:mb-12 my-2 rounded-sm bg-c-lighter md:border-c-light md:border-l-4 md:p-8 md:w-3/4 md:mx-auto xl:w-1/2'
   >
     <article class=''>
-      <div class='flex flex-col gap-4'>
+      <div class='flex flex-col'>
         <aside>
-          <h4 class='text-3xl py-2'>Over 50 Dogs Rescued!</h4>
           <div class='text-c-dark'>
             <p>Howl of a Dog</p>
             <p>July 8th, 2023</p>
           </div>
+          <h3 class='text-4xl py-2'>Over 50 Dogs Rescued!</h3>
         </aside>
         <p>Watch the video below to learn about one of our rescues!</p>
-        <aside id='embed-container' class='flex flex-col items-center justify-center'>
+        <aside
+          id='embed-container'
+          class='flex flex-col items-center justify-center my-4'
+        >
           <VideoEmbed client:only />
         </aside>
-        <h3 class='text-2xl mt-2'>🐶 Rescue Photos</h3>
-        <p>
+        <h4 class='text-3xl mt-2 mb-1'>Rescue Photos 🐶</h4>
+        <p class='mb-4'>
           All of the dog photos below were taken from the <b>50+</b> rescues we've achieved
           in the past <b>month</b>. They've made incredible transformations after the
           second chance they've been given!
@@ -91,8 +94,8 @@ import iconLogo from '../content/icons/logo.webp';
           <li><GridImage client:load /></li>
         </ul>
       </div>
-      <h3 class='text-2xl mt-2'>🙏Thank you!</h3>
-      <p class='mt-2 mb-4'>
+      <h4 class='text-3xl mt-2 mb-1'>Thank you! 🙏</h4>
+      <p class='mb-4'>
         We appreciate you for taking a moment to learn about our rescues! If you'd like to
         stay up to date with us, you can find more information on our <a
           target='_blank'
