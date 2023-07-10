@@ -1,4 +1,5 @@
 ---
+import { SEOMetadata } from 'astro-seo-metadata';
 import Rerouter from '../components/Rerouter.jsx';
 import '../sass/globals.scss';
 ---
@@ -7,17 +8,29 @@ import '../sass/globals.scss';
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
-    <meta name='description' content='Astro description' />
     <meta name='viewport' content='width=device-width' />
-    <link rel='icon' type='image/svg+xml' href='/favicon.ico' />
     <meta name='generator' content={Astro.generator} />
-    <title>Page Not Found</title>
+    <meta name='theme-color' content='#3a6ddc' />
+
+    <SEOMetadata
+      siteName='A&B Blogs'
+      title='Page Not Found'
+      description="A&B isn't just a social network. It's your social network. With over 100,000 blog posts, you'll find just about anything."
+      image=''
+      favicon='/favicon.ico'
+      author='A&B'
+      copyright='© 2023 A&B'
+      type='website'
+      canonicalUrl={Astro.url.toString()}
+      astroSitemap={true}
+      astroGenerator={true}
+    />
   </head>
   <body class='bg-c-darker'>
     <main class='h-screen flex flex-col items-center justify-center text-c-lightest'>
       <header class='m-12 flex flex-col gap-2 bg-c-dark p-8 rounded-sm'>
         <p class='text-sm text-c-light'>Error 404: Page Not Found</p>
-        <h2 class='text-2xl font-bold'>It's empty in here.</h2>
+        <h2 class='text-3xl'>It's empty in here.</h2>
         <p>
           The page you're looking for isn't at this address - well, unless you were
           seeking out this error page.
