@@ -21,7 +21,7 @@ export default function Rerouter({
   }, [href, time]);
 
   return (
-    <aside className='flex flex-col items-center justify-center bg-c-dark p-4 rounded-md m-12'>
+    <aside className='flex flex-col items-center justify-center bg-c-dark p-4 rounded-sm m-12'>
       <p className='font-bold'>{secondsLeft}</p>
       <p className='text-sm'>{text}</p>
     </aside>
